@@ -1,2 +1,7 @@
 # > xyz域名
 DOMAIN-SUFFIX, 687657.xyz
+# > emby
+DOMAIN-SUFFIX, 191920.xyz
+DOMAIN-SUFFIX, hohai.eu.org
+# > NETLIB
+DOMAIN, www.netlib.re
