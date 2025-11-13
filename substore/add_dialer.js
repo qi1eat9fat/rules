@@ -4,7 +4,7 @@ function operator(proxies, targetPlatform, context) {
     "日本": "日本节点",
     "香港": "香港节点",
     "台湾": "香港节点",
-    "新加坡": "香港节点",
+    "新加坡": "狮城节点",
     "美国": "日本节点"
   };
 
