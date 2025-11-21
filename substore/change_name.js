@@ -8,7 +8,7 @@ function operator(proxies, targetPlatform, context) {
     // .padStart(2, '0') 表示目标长度为2，如果不足，在开头用'0'填充
     const formattedCounter = String(counter).padStart(2, '0');
     // 构建新的代理名称
-    const newName = `美国家宽赞助${formattedCounter}`;
+    const newName = `美国家宽${formattedCounter} 赞助`;
     // 序号自增
     counter++;
     // 返回带有新名称的代理对象
