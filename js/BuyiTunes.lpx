@@ -1,0 +1,11 @@
+#!name=BuyiTunes多合一[墨鱼版]
+#!desc=移植自ddgksf2013的QX脚本，解锁多款App。
+#!author=ddgksf2013
+#!homepage=https://t.me/ddgksf2021
+#!icon=https://raw.githubusercontent.com/loon-project/loon-gallery/master/icon/loon.png
+
+[Script]
+http-response ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$ script-path=https://raw.githubusercontent.com/qi1eat9fat/rules/refs/heads/main/js/BuyiTunes.js, requires-body=true, timeout=60, tag=BuyiTunes
+
+[MITM]
+hostname = buy.itunes.apple.com
