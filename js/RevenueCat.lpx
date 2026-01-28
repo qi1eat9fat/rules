@@ -1,0 +1,12 @@
+#!name=RevenueCat多合一解锁
+#!desc=支持多款App的内购解锁，基于墨鱼版脚本移植。
+#!author=ddgksf2013
+#!icon=https://raw.githubusercontent.com/loon-project/loon-gallery/master/icon/loon.png
+
+[Script]
+# 核心解锁逻辑
+http-response ^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts$|subscribers\/[^/]+$) script-path=https://raw.githubusercontent.com/qi1eat9fat/rules/refs/heads/main/js/RevenueCat.js, requires-body=true, timeout=60, tag=RevenueCat
+http-request ^https:\/\/api\.(revenuecat|rc-backup)\.com\/.+\/(receipts|subscribers) script-path=https://raw.githubusercontent.com/ddgksf2013/Scripts/master/deleteHeader.js, requires-body=true, tag=RC请求修正
+
+[MITM]
+hostname = api.revenuecat.com, api.rc-backup.com
