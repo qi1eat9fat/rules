@@ -4,6 +4,7 @@
 
 [Rewrite]
 ^https?:\/\/api-prod\.docoi\.cc\/user\/v1\/app\/base_info reject-dict
+^https?:\/\/api-prod\.docoi\.cc\/circle\/v1\/ad\/user reject-dict
 
 [MITM]
 # 必须配置 MITM 才能解密并匹配 HTTPS 的具体路径
