@@ -1,11 +1,10 @@
-#!name=屏蔽 Docoi 广告图片
-#!desc=精准拦截 cdn.docoi.cc 域名下的特定广告图片请求，并返回空白占位图以避免应用内出现裂图。
+#!name=屏蔽梦游社广告
+#!desc=屏蔽梦游社广告
 #!author=自定义
 
 [Rewrite]
-# 匹配特定路径并返回透明图片 (reject-img)
-^https?:\/\/cdn\.docoi\.cc\/multipleSource\/advertisement\/.* reject-img
+^https?:\/\/api-prod\.docoi\.cc\/user\/v1\/app\/base_info reject-dict
 
 [MITM]
 # 必须配置 MITM 才能解密并匹配 HTTPS 的具体路径
-hostname = cdn.docoi.cc
+hostname = api-prod.docoi.cc
